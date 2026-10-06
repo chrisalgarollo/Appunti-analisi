@@ -87,6 +87,12 @@ $$
 - Interpretazione: la funzione non "confonde" i punti.
 - Significato geometrico: ogni retta orizzontale interseca il grafico della funzione in **al più un punto**.
 - Collegamento: l'iniettività è legata alla proprietà di **invertibilità** della funzione.
+- La funzione è suriettiva se:
+  ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANMAAAASCAYAAADBs+vIAAAATElEQVRoQ+3TMQEAMAyAsNa/6X4zMM7kwgA7QGJfAV/MBBEzQcRMEDETRMwEETNBxEwQMRNEzAQRM0HETBAxE0TMBBEzQcRMEDETRA5v9wATs3g8rgAAAABJRU5ErkJggg==)
+
+		∀y∈Y, ∃x∈X   ∶  f(a)=bfor all b is an element of cap B comma space there exists a is an element of cap A colon f of a equals b
+
+	∀𝑏∈𝐵,∃𝑎∈𝐴∶𝑓(𝑎)=𝑏
 
 ### Esempi di verifica dell'iniettività
 
