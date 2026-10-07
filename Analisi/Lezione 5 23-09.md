@@ -182,21 +182,20 @@ $$
 
 ### Definizione di $\mathbb{R}$ come Insieme Quoziente
 
-- L'inse$\mathcal{C}$
-- L'insieme dei **numeri reali** ($\mathbb{R}$) è definito formalmente come l'**insieme quoziente** di $\mathcal{C}$ rispetto alla relazione di equivalenza $\sim$: $$
-\mathbb{R} := \mathcal{C} / \sim
-$$
-- Un **numero reale** $R \in \mathbb{R}$ è una classe di equivalenza di successioni di Cauchy razionali: $$
-R = [{x_n}]_\sim = \left\{ {y_n} \in \mathcal{C} ;\middle|; \lim_{n \to +\infty} (x_n - y_n) = 0 \right\}
+- L'insieme di tutte le successioni di Cauchy $\mathcal{C}$ è definito come:$$\mathcal{C} = \left\{ \{x_n\}_{n \in \mathbb{N}} \subset \mathbb{Q} \;\middle\vert{}\; \forall \varepsilon > 0, \exists N \in \mathbb{N} : \forall n,m \ge N, \vert{}x_n - x_m\vert{} < \varepsilon \right\}$$
+- L'insieme dei **numeri reali** ($\mathbb{R}$) è definito formalmente come l'**insieme quoziente** di $\mathcal{C}$ rispetto alla relazione di equivalenza $\sim$:$$\mathbb{R} = \mathcal{C} / \sim \; = \left\{ [\{x_n\}] \;\middle\vert{}\; \{x_n\} \in \mathcal{C} \right\}$$
+- Fissata una successione di Cauchy $\{x_n\} \in \mathcal{C}$, la sua classe di equivalenza è il sottoinsieme:$$[\{x_n\}] = \left\{ \{y_n\} \in \mathcal{C} \;\middle\vert{}\; \{y_n\} \sim \{x_n\} \right\}$$
+- Un **numero reale** $r \in \mathbb{R}$ è una classe di equivalenza di successioni di Cauchy razionali: $$
+r = [\{x_n\}]_\sim = \left\{ \{y_n\} \in \mathcal{C} \middle| \lim_{n \to +\infty} (x_n - y_n) = 0 \right\}
 $$
 
 ### Operazioni algebriche in $\mathbb{R}$ e immersione di $\mathbb{Q}$
 
 - **Somma e prodotto tra numeri reali**: $$
-[{x_n}] + [{y_n}] := [{x_n + y_n}]
+[\{x_n\}] + [\{y_n\}] := [\{x_n + y_n\}]
 $$
 $$
-[{x_n}] \cdot [{y_n}] := [{x_n \cdot y_n}]
+[\{x_n\}] \cdot [\{y_n\}] := [\{x_n \cdot y_n\}]
 $$ Le operazioni risultano ben poste ed indipendenti dai particolari rappresentanti scelti all'interno delle classi.
 - **Immersione dei numeri razionali in $\mathbb{R}$**:
     - Si definisce la funzione $f: \mathbb{Q} \to \mathbb{R}$ che associa ad ogni $q \in \mathbb{Q}$ la classe di equivalenza della successione costante $x_n = q$: $$

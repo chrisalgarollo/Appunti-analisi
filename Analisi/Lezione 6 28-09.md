@@ -4,7 +4,7 @@
 
 - Si consideri l'insieme $\mathcal{C}$ di tutte le **successioni di Cauchy** di numeri razionali ${q_n} \subseteq \mathbb{Q}$.
 - Ricordo della condizione di Cauchy in $\mathbb{Q}$: $$
-\forall \varepsilon > 0 (\in \mathbb{Q}), , \exists N_\varepsilon \in \mathbb{N} \quad \text{tale che} \quad \forall m, n \ge N_\varepsilon \implies |q_m - q_n| < \varepsilon
+\forall \varepsilon > 0 (\in \mathbb{Q}) , \exists N_\varepsilon \in \mathbb{N} \quad \text{tale che} \quad \forall m, n \ge N_\varepsilon \implies |q_m - q_n| < \varepsilon
 $$ (esprime il fatto che i termini della successione si accumulano e si concentrano su se stessi).
 - **Relazione di equivalenza** ($\sim$) definita sull'insieme $\mathcal{C}$: $$
 {x_n} \sim {y_n} \iff \lim_{n \to +\infty} (x_n - y_n) = 0
@@ -14,7 +14,7 @@ $$
 - Definizione dell'insieme dei **numeri reali** ($\mathbb{R}$) come **insieme quoziente**: $$
 \mathbb{R} := \mathcal{C} / \sim
 $$
-    - Un **numero reale** $R \in \mathbb{R}$ è una classe di equivalenza di successioni di Cauchy razionali: $R = [{q_n}]$.
+    - Un **numero reale** $r \in \mathbb{R}$ è una classe di equivalenza di successioni di Cauchy razionali: $r = [\{q_n\}]$.
 - **Immersione dei numeri razionali** ($\mathbb{Q}$) in $\mathbb{R}$:
     - Definita tramite la funzione iniettiva $f: \mathbb{Q} \to \mathbb{R}$ che associa ad ogni $q \in \mathbb{Q}$ la classe di equivalenza della successione costante $q_n = q$: $$
 f(q) := [{q, q, q, \dots}]
@@ -23,13 +23,13 @@ $$
 
 ### Estensione delle operazioni algebriche
 
-Siano $X = [{x_n}]$ e $Y = [{y_n}]$ due numeri reali rappresentati dalle rispettive successioni di Cauchy razionali.
+Siano $x = [\{x_n\}]$ e $y = [\{y_n\}]$ due numeri reali rappresentati dalle rispettive successioni di Cauchy razionali.
 
 - **Somma tra numeri reali**: $$
-X + Y := [{x_n + y_n}]
+x + y := [\{x_n + y_n\}]
 $$
 - **Prodotto tra numeri reali**: $$
-X \cdot Y := [{x_n \cdot y_n}]
+x \cdot y := [\{x_n \cdot y_n\}]
 $$
 - **Verifica della buona definizione**:
     - Se ${x_n} \sim {x'_n}$ e ${y_n} \sim {y'_n}$ (ovvero $x_n - x'_n \to 0$ e $y_n - y'_n \to 0$), allora: $$
@@ -42,8 +42,8 @@ $$
 ### Estensione del modulo, della distanza euclidea e dell'ordinamento su $\mathbb{R}$
 
 - **Modulo di un numero reale**:
-    - Sia $R = [{q_n}] \in \mathbb{R}$. Si definisce **modulo** (o **valore assoluto**) del numero reale $R$ la classe di equivalenza della successione dei moduli: $$
-|R| := [{|q_n|}]
+    - Sia $r = [\{q_n\}] \in \mathbb{R}$. Si definisce **modulo** (o **valore assoluto**) del numero reale $r$ la classe di equivalenza della successione dei moduli: $$
+|r| := [\{|q_n|\}]
 $$
     - Verificazione della buona definizione: discende dalla seguente disuguaglianza (conseguenza della disuguaglianza triangolare): $$
 ||a| - |b|| \le |a - b|
