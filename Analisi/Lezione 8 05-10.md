@@ -42,6 +42,46 @@ $$
 
 ---
 
+### Teorema dei Carabinieri (o del Confronto)
+
+**Enunciato:**
+Siano $a_n$, $b_n$ e $c_n$ tre successioni di numeri reali tali che:
+
+1.definitivamente per $n \to +\infty$ vale la disuguaglianza:
+$$a_n \le b_n \le c_n$$
+
+2. i limiti delle successioni esterne coincidono ed equivalgono a uno stesso valore finito $L \in \mathbb{R}$:
+$$\lim_{n \to +\infty} a_n = L \quad \text{e} \quad \lim_{n \to +\infty} c_n = L$$
+
+Allora anche la successione "incastrata" $b_n$ converge ed ha limite $L$:
+$$\lim_{n \to +\infty} b_n = L$$
+
+---
+
+**Dimostrazione:**
+Sia $\varepsilon > 0$ un numero reale positivo fissato a piacere. 
+
+Per la definizione di limite applicata alle successioni $a_n$ e $c_n$:
+
+- Per $a_n$: esiste un indice $N_1 \in \mathbb{N}$ tale che per ogni $n \ge N_1$:
+  $$L - \varepsilon < a_n < L + \varepsilon$$
+
+- Per $c_n$: esiste un indice $N_2 \in \mathbb{N}$ tale che per ogni $n \ge N_2$:
+  $$L - \varepsilon < c_n < L + \varepsilon$$
+
+- Inoltre, per la condizione di ordinamento, esiste un indice $N_3 \in \mathbb{N}$ tale che per ogni $n \ge N_3$:
+  $$a_n \le b_n \le c_n$$
+
+Scegliamo come soglia massima $N = \max(\{N_1, N_2, N_3\})$. Per ogni $n \ge N$ valgono contemporaneamente tutte e tre le disuguaglianze.
+
+Combinando le stime otteniamo:
+$$L - \varepsilon < a_n \le b_n \le c_n < L + \varepsilon$$
+
+Isolando i termini estremi rispetto a $b_n$:
+$$L - \varepsilon < b_n < L + \varepsilon \iff |b_n - L| < \varepsilon$$
+
+Poiché questo vale per ogni $\varepsilon > 0$, per la definizione di limite si conclude che:
+$$\lim_{n \to +\infty} b_n = L$$
 ## Il Teorema di Bolzano-Weierstrass
 
 ### Enunciato del Teorema
@@ -79,7 +119,8 @@ $$ .
     - Poiché $a_k \to \bar{x}$ e $b_k \to \bar{x}$ per $k \to +\infty$, per il teorema dei due carabinieri la successione ${x_k}$ converge a $\bar{x}$: $$
 \lim_{k \to +\infty} x_k = \bar{x}
 $$
-10. **Conclusione**: Essendo ${x_k} \subseteq E \setminus {\bar{x}}$ una successione di punti dell'insieme tutti distinti da $\bar{x}$ e convergente a $\bar{x}$, il numero reale $\bar{x}$ è un **punto di accumulazione** per l'insieme $E$ ($\bar{x} \in E'$).
+10. **Conclusione**: Essendo $\{x_k\} \subseteq E \setminus \{\bar{x}\}$ una successione di punti dell'insieme tutti distinti da $\bar{x}$ e convergente a $\bar{x}$, il numero reale $\bar{x}$ è un **punto di accumulazione** per l'insieme $E$ ($\bar{x} \in E'$).
+
 
 ---
 
@@ -93,7 +134,7 @@ $$
 ### Definizione formale dell'insieme dei numeri complessi
 
 - L'insieme dei **numeri complessi** (indicato con $\mathbb{C}$) è definito formalmente come il **prodotto cartesiano** di due copie dell'insieme dei numeri reali: $$
-\mathbb{C} := \mathbb{R} \times \mathbb{R} = { (a, b) \mid a \in \mathbb{R} \land b \in \mathbb{R} }
+\mathbb{C} := \mathbb{R} \times \mathbb{R} = \{ (a, b) \mid a \in \mathbb{R} \land b \in \mathbb{R} \}
 $$
 - Un **numero complesso** $z \in \mathbb{C}$ è una **coppia ordinata** di numeri reali $(a, b)$. L'ordine degli elementi è vincolante: scambiando le componenti si ottiene un numero complesso distinto.
 
@@ -116,7 +157,7 @@ Dati due numeri complessi $z = (a, b)$ e $w = (c, d) \in \mathbb{C}$:
 ### Somma di numeri complessi
 
 - **Definizione formale**: la somma $z + w$ è il numero complesso ottenuto sommando le componenti omologhe: $$
-z + w := (a + c, , b + d)
+z + w := (a + c , b + d)
 $$
 - **Significato geometrico (Legge del parallelogramma)**:
     - Nel piano di Gauss, sommare due numeri complessi $z$ e $w$ corrisponde ad individuare il quarto vertice del parallelogramma formato dall'origine $(0,0)$, da $z$ e da $w$.
@@ -160,10 +201,10 @@ $$ .
 - Oggetto: determinare l'elemento $1/z \in \mathbb{C}$ tale che $z \cdot \left(\frac{1}{z}\right) = (1, 0)$.
 - Condizione di esistenza: il numero complesso deve essere non nullo, ovvero $z = (a, b) \neq (0, 0)$, il che equivale a richiedere che la somma dei quadrati delle componenti sia strettamente positiva ($a^2 + b^2 > 0$).
 - **Formula del reciproco**: $$
-\frac{1}{z} := \left( \frac{a}{a^2 + b^2}, , \frac{-b}{a^2 + b^2} \right)
+\frac{1}{z} := \left( \frac{a}{a^2 + b^2} , \frac{-b}{a^2 + b^2} \right)
 $$ .
 - **Verifica algebrica**: $$
-(a, b) \cdot \left( \frac{a}{a^2 + b^2}, , \frac{-b}{a^2 + b^2} \right) = \left( \frac{a^2}{a^2 + b^2} - \frac{-b^2}{a^2 + b^2}, , \frac{-ab}{a^2 + b^2} + \frac{ba}{a^2 + b^2} \right) = (1, 0)
+(a, b) \cdot \left( \frac{a}{a^2 + b^2} , \frac{-b}{a^2 + b^2} \right) = \left( \frac{a^2}{a^2 + b^2} - \frac{-b^2}{a^2 + b^2} , \frac{-ab}{a^2 + b^2} + \frac{ba}{a^2 + b^2} \right) = (1, 0)
 $$ .
 - L'unico numero complesso privo di reciproco è lo zero $(0, 0)$.
 
@@ -179,7 +220,7 @@ $$
 
 ### Proprietà dell'immersione
 
-1. **Iniettività**: la funzione $f$ è **iniettiva**, permettendo di identificare l'insieme dei numeri reali $\mathbb{R}$ con la sua immagine $f(\mathbb{R}) = { (x, 0) \mid x \in \mathbb{R} } \subset \mathbb{C}$ (corrispondente all'asse orizzontale del piano di Gauss).
+1. **Iniettività**: la funzione $f$ è **iniettiva**, permettendo di identificare l'insieme dei numeri reali $\mathbb{R}$ con la sua immagine $f(\mathbb{R}) = \{ (x, 0) \mid x \in \mathbb{R} \} \subset \mathbb{C}$ (corrispondente all'asse orizzontale del piano di Gauss).
 2. **Conservazione delle operazioni algebriche**:
     - Per ogni $x, y \in \mathbb{R}$: $$
 f(x + y) = (x + y, 0) = (x, 0) + (y, 0) = f(x) + f(y)
