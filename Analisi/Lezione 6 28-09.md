@@ -136,23 +136,23 @@ $$ dove $|x_m - x_n|$ rappresenta la distanza euclidea tra i due numeri reali $x
 2. Per il **Teorema di densità dei razionali**, per ogni termine reale $x_n$ scelga un numero razionale $q_n \in \mathbb{Q}$ distante meno di $\frac{1}{n}$ da $x_n$: $$
 \forall n \ge 1 \implies |x_n - q_n| < \frac{1}{n}
 $$
-3. Si dimostra che la successione di numeri razionali ${q_n}$ così costruita è una **successione di Cauchy** in $\mathbb{Q}$. Presi due indici $m, n \ge N_\varepsilon$ ed applicando la disuguaglianza triangolare: $$
+3. Si dimostra che la successione di numeri razionali $\{q_n\}$ così costruita è una **successione di Cauchy** in $\mathbb{Q}$. Presi due indici $m, n \ge N_\varepsilon$ ed applicando la disuguaglianza triangolare: $$
 |q_m - q_n| = |(q_m - x_m) + (x_m - x_n) + (x_n - q_n)| \le |q_m - x_m| + |x_m - x_n| + |x_n - q_n|
 $$
 $$
-|q_m - q_n| < \frac{1}{m} + |X_m - X_n| + \frac{1}{n}
-$$ Scegliendo l'indice di soglia $N_1$ opportunamente grande per cui $\frac{1}{m} < \varepsilon$, $\frac{1}{n} < \varepsilon$ e $|X_m - X_n| < \varepsilon$ (poiché ${X_n}$ è di Cauchy nei reali): $$
+|q_m - q_n| < \frac{1}{m} + |x_m - x_n| + \frac{1}{n}
+$$ Scegliendo l'indice di soglia $N_1$ opportunamente grande per cui $\frac{1}{m} < \varepsilon$, $\frac{1}{n} < \varepsilon$ e $|x_m - x_n| < \varepsilon$ (poiché ${x_n}$ è di Cauchy nei reali): $$
 |q_m - q_n| < \varepsilon + \varepsilon + \varepsilon = 3\varepsilon
-$$ Dunque ${q_n}$ è una successione di Cauchy razionale (${q_n} \in \mathcal{C}$).
-4. Per il teorema precedente sulle successioni di Cauchy razionali, la successione ${q_n}$ converge ad un limite reale $L = [{q_n}] \in \mathbb{R}$: $$
+$$ Dunque $\{q_n\}$ è una successione di Cauchy razionale (${q_n} \in \mathcal{C}$).
+4. Per il teorema precedente sulle successioni di Cauchy razionali, la successione ${q_n}$ converge ad un limite reale $L = [\{q_n\}] \in \mathbb{R}$: $$
 \lim_{n \to +\infty} q_n = L
 $$
-5. Si dimostra infine che la successione reale iniziale ${X_n}$ converge al medesimo limite reale $L$. Valutando la distanza tra $X_n$ ed $L$ tramite la disuguaglianza triangolare: $$
-|X_n - L| \le |X_n - q_n| + |q_n - L|
+5. Si dimostra infine che la successione reale iniziale ${x_n}$ converge al medesimo limite reale $L$. Valutando la distanza tra $x_n$ ed $L$ tramite la disuguaglianza triangolare: $$
+|x_n - L| \le |x_n - q_n| + |q_n - L|
 $$
-6. Poiché $|X_n - q_n| < \frac{1}{n} < \varepsilon$ (definitivamente) e $|q_n - L| < \varepsilon$ (per la convergenza di $q_n \to L$), per indici $n$ maggiori di un'opportuna soglia $N_3$ si ottiene: $$
-|X_n - L| < \varepsilon + \varepsilon = 2\varepsilon
+6. Poiché $|x_n - q_n| < \frac{1}{n} < \varepsilon$ (definitivamente) e $|q_n - L| < \varepsilon$ (per la convergenza di $q_n \to L$), per indici $n$ maggiori di un'opportuna soglia $N_3$ si ottiene: $$
+|x_n - L| < \varepsilon + \varepsilon = 2\varepsilon
 $$
-7. Per l'arbitrarietà di $\varepsilon > 0$, si conclude che la successione reale ${X_n}$ converge in $\mathbb{R}$ al limite $L$: $$
-\lim_{n \to +\infty} X_n = L
+7. Per l'arbitrarietà di $\varepsilon > 0$, si conclude che la successione reale $\{x_n\}$ converge in $\mathbb{R}$ al limite $L$: $$
+\lim_{n \to +\infty} x_n = L
 $$

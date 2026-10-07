@@ -2,7 +2,7 @@
 
 ### Quadro generale delle applicazioni
 
-- L'insieme dei numeri reali ($\mathbb{R}$) soddisfa la **proprietà di completezza**: una successione numerica reale ${x_n} \subseteq \mathbb{R}$ è convergente in $\mathbb{R}$ se e solo se è una **successione di Cauchy**.
+- L'insieme dei numeri reali ($\mathbb{R}$) soddisfa la **proprietà di completezza**: una successione numerica reale $\{x_n\} \subseteq \mathbb{R}$ è convergente in $\mathbb{R}$ se e solo se è una **successione di Cauchy**.
 - Dalla proprietà di completezza discendono tre conseguenze analitiche fondamentali:
     1. La **convergenza delle successioni monotone e limitate**.
     2. L'**esistenza dell'estremo superiore ed inferiore** per sottoinsiemi di $\mathbb{R}$.
@@ -14,23 +14,23 @@
 
 ### Definizioni operative
 
-- **Successione monotona crescente**: una successione ${x_n}_{n \in \mathbb{N}} \subseteq \mathbb{R}$ è monotona crescente se: $$
+- **Successione monotona crescente**: una successione $\{x_n\}_{n \in \mathbb{N}} \subseteq \mathbb{R}$ è monotona crescente se: $$
 \forall n \in \mathbb{N} \implies x_n \le x_{n+1}
 $$ (Significato dinamico: moto discreto sulla retta reale con velocità non negativa che non torna mai indietro).
-- **Successione superiormente limitata**: la successione ${x_n}$ è superiormente limitata se esiste un numero reale $M \in \mathbb{R}$ tale che: $$
+- **Successione superiormente limitata**: la successione $\{x_n\}$ è superiormente limitata se esiste un numero reale $M \in \mathbb{R}$ tale che: $$
 \forall n \in \mathbb{N} \implies x_n \le M
 $$ ovvero se l'intera successione è contenuta nella semiretta $(-\infty, M]$.
 
 ### Teorema di Convergenza delle Successioni Monotone e Limitate
 
-- **Enunciato**: Ogni successione numerica reale ${x_n}$ monotona crescente e superiormente limitata è convergente in $\mathbb{R}$, ossia ammette un limite finito $L \in \mathbb{R}$ ($\lim_{n \to +\infty} x_n = L$).
+- **Enunciato**: Ogni successione numerica reale $\{x_n\}$ monotona crescente e superiormente limitata è convergente in $\mathbb{R}$, ossia ammette un limite finito $L \in \mathbb{R}$ ($\lim_{n \to +\infty} x_n = L$).
     - Enunciato speculare: ogni successione monotona decrescente e inferiormente limitata converge ad un limite finito in $\mathbb{R}$.
 
 ### Dimostrazione del Teorema
 
 1. Si supponga per **assurdo** che la successione non sia di Cauchy.
 2. Negare la proprietà di Cauchy equivale ad affermare che: $$
-\exists \varepsilon > 0 \quad \text{tale che} \quad \forall N \in \mathbb{N}, , \exists m_N, n_N \ge N \quad \text{con} \quad |x_{n_N} - x_{m_N}| \ge \varepsilon
+\exists \varepsilon > 0 \quad \text{tale che} \quad \forall N \in \mathbb{N} , \hspace{0.5cm}\exists \hspace{0.2cm}m_{N,}n_N \ge N \quad \text{con} \quad |x_{n_N} - x_{m_N}| \ge \varepsilon
 $$
 3. Senza perdita di generalità, si assuma l'ordinamento degli indici $n_N > m_N$. Per la proprietà di monotonia crescente della successione, si ha $x_{n_N} \ge x_{m_N}$, da cui la rimozione del modulo fornisce: $$
 x_{n_N} - x_{m_N} \ge \varepsilon \implies x_{n_N} \ge x_{m_N} + \varepsilon
@@ -42,7 +42,7 @@ x_{n_k} \ge x_1 + k \cdot \varepsilon \quad \forall k \ge 1
 $$
 7. Poiché $\varepsilon > 0$ è una costante fissata, per $k \to +\infty$ la quantità $k \cdot \varepsilon$ diverge a $+\infty$. Di conseguenza, la sottosuccessione ${x_{n_k}}$ (e dunque la successione ${x_n}$) risulta non limitata superiormente.
 8. Tale conclusione entra in palese contraddizione con l'ipotesi iniziale di **limitatezza superiore** ($x_n \le M$) (**assurdo**).
-9. **Conclusione**: La successione ${x_n}$ è una **successione di Cauchy** e, per la proprietà di completezza di $\mathbb{R}$, **converge** a un limite finito $L \in \mathbb{R}$.
+9. **Conclusione**: La successione $\{x_n\}$ è una **successione di Cauchy** e, per la proprietà di completezza di $\mathbb{R}$, **converge** a un limite finito $L \in \mathbb{R}$.
 
 ### Applicazione: Dimostrazione di Convergenza della Successione Ricorsiva della Radice di 2
 
@@ -85,7 +85,7 @@ $$
 - **Estremo Superiore** ($\sup A$): un numero reale $\bar{x} \in \mathbb{R}$ è l'**estremo superiore** di $A$ (in simboli $\bar{x} = \sup A$) se soddisfa due condizioni:
     1. $\bar{x}$ è un **maggiorante** di $A$ ($\forall x \in A \implies x \le \bar{x}$).
     2. $\bar{x}$ è il **minimo dei maggioranti**: per ogni $\varepsilon > 0$, la quantità $\bar{x} - \varepsilon$ non è più un maggiorante di $A$, ovvero: $$
-\forall \varepsilon > 0, , \exists x \in A \quad \text{tale che} \quad x > \bar{x} - \varepsilon
+\forall \varepsilon > 0 , \hspace{0.5cm}\exists \hspace{0.2cm}x \in A \quad \text{tale che} \quad x > \bar{x} - \varepsilon
 $$
 
 ### Relazione tra Estremo Superiore e Massimo
