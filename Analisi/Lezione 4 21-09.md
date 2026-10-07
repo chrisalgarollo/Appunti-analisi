@@ -19,7 +19,7 @@
 ### Definizione di valore assoluto
 
 - La **funzione modulo** (o **valore assoluto**) sui numeri razionali associa ad ogni $q \in \mathbb{Q}$ un valore non negativo secondo la legge: $$
-|q| := \begin{cases} q & \text{se } q > 0 \ 0 & \text{se } q = 0 \ -q & \text{se } q < 0 \end{cases}
+|q| := \begin{cases} q & \text{se } q > 0, &  \ 0 & \text{se } q = 0, &  \ -q & \text{se } q < 0 \end{cases}\}
 $$
 - Notazione: si indica con la barra verticale $|q|$ e si legge **modulo di $q$**.
 - Grafico della funzione: ha una forma a "V" nel piano cartesiano passante per l'origine $(0,0)$.
@@ -55,16 +55,16 @@ $$
 
 ### Formulazioni equivalenti del limite
 
-Sia ${x_n}_{n \ge n_0} \subseteq \mathbb{Q}$ una successione numerica e sia $L \in \mathbb{Q}$. Si dice che la successione ha **limite** $L$, oppure che **converge** al valore $L$ (in simboli $\lim_{n \to +\infty} x_n = L$ o $x_n \to L$), se si verifica una delle seguenti formulazioni equivalenti:
+Sia $\{x_n \}_{n \ge n_0} \subseteq \mathbb{Q}$ una successione numerica e sia $L \in \mathbb{Q}$. Si dice che la successione ha **limite** $L$, oppure che **converge** al valore $L$ (in simboli $\lim_{n \to +\infty} x_n = L$ o $x_n \to L$), se si verifica una delle seguenti formulazioni equivalenti:
 
 1. **Formulazione con disuguaglianze aperte**: $$
-\forall \varepsilon > 0, , \exists N_\varepsilon \ge n_0 \quad \text{tale che} \quad \forall n > N_\varepsilon \implies L - \varepsilon < x_n < L + \varepsilon
+\forall \varepsilon > 0 , \exists N_\varepsilon \ge n_0 \quad \text{tale che} \quad \forall n > N_\varepsilon \implies L - \varepsilon < x_n < L + \varepsilon
 $$
 2. **Formulazione insiemistica (trappola definitivamente contenitiva)**: $$
-\forall \varepsilon > 0, , \exists N_\varepsilon \ge n_0 \quad \text{tale che} \quad {x_n}_{n > N_\varepsilon} \subseteq (L - \varepsilon, L + \varepsilon)
+\forall \varepsilon > 0 , \exists N_\varepsilon \ge n_0 \quad \text{tale che} \quad {x_n}_{n > N_\varepsilon} \subseteq (L - \varepsilon, L + \varepsilon)
 $$
 3. **Formulazione mediante modulo e distanza euclidea**: $$
-\forall \varepsilon > 0, , \exists N_\varepsilon \ge n_0 \quad \text{tale che} \quad \forall n > N_\varepsilon \implies |x_n - L| < \varepsilon
+\forall \varepsilon > 0,  \exists N_\varepsilon \ge n_0 \quad \text{tale che} \quad \forall n > N_\varepsilon \implies |x_n - L| < \varepsilon
 $$ (esprime che dal tempo di soglia $N_\varepsilon$ in poi, la distanza euclidea tra $x_n$ ed $L$ è strettamente inferiore ad $\varepsilon$).
 
 ### Interpretazione analitica

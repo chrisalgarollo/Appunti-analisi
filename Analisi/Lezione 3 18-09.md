@@ -83,7 +83,7 @@ $$ La disuguaglianza $P_{n+1}$ è dimostrata.
 
 - Una **successione** in un insieme $X$ è una funzione $f: D \to X$ il cui dominio $D$ è un insieme **numerabile** ($\vert D \vert = \vert \mathbb{N} \vert$, ad esempio $D = \mathbb{N}, \mathbb{N}^*, \mathbb{Z}$).
 - Notazione standard:
-    - Si definisce $x_n := f(n)$ per ogni $n \in D$.
+    - Si definisce $\{x_n \}:= f(n)$ per ogni $n \in D$.
     - La successione si indica con la notazione ${x_n}_{n \in D} \subseteq X$.
     - Si identifica formalmente la funzione con la sua **immagine** (insieme discreto di punti presi nell'insieme $X$).
 
@@ -94,7 +94,7 @@ $$ La disuguaglianza $P_{n+1}$ è dimostrata.
 
 ### Esempi di successioni e classificazione dei sistemi dinamici
 
-1. **Successione** $x_n = n$ con $n \in \mathbb{N}$:
+1. **Successione** $\{x_n \} = n$ con $n \in \mathbb{N}$:
     - Descrive un **moto uniforme** lungo la retta razionale con velocità positiva e costante ($x_0 = 0, x_1 = 1, x_2 = 2, \dots$).
 2. **Successione** $x_n = \frac{1}{n}$ con $n \in \mathbb{N}^* = \mathbb{N} \setminus {0}$:
     - Valori assunti: $x_1 = 1, x_2 = \frac{1}{2}, x_3 = \frac{1}{3}, \dots$.

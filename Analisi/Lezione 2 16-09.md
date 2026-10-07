@@ -9,7 +9,7 @@
 
 - Dati due insiemi $X$ e $Y$, un **grafico** da $X$ a $Y$ è un sottoinsieme $G \subseteq X \times Y$ tale che ogni sezione verticale lo incontra in **al più un punto**.
 - **Sezione verticale** ($S_x$): data da un elemento $x \in X$ fissato al variare di $y \in Y$: $$
-S_x := { (x, y) \in X \times Y \mid y \in Y }
+S_x := \{ (x, y) \in X \times Y \mid y \in Y \}
 $$
 - Condizione di grafico: per ogni $x \in X$, l'intersezione tra $G$ e la sezione verticale $S_x$ contiene al più un elemento: $$
 G \cap S_x \text{ contiene al più un punto}
@@ -18,9 +18,9 @@ $$ (L'intersezione può essere costituita da un punto oppure essere l'insieme vu
 
 ### Esempi di grafici e non-grafici nel piano razionale
 
-1. Insieme $G = { (x, x^2) \in \mathbb{Q} \times \mathbb{Q} \mid x \in \mathbb{Q} }$:
+1. Insieme $G = \{ (x, x^2) \in \mathbb{Q} \times \mathbb{Q} \mid x \in \mathbb{Q} \}$:
     - È un **grafico** (rappresenta una parabola con asse verticale) poiché per ciascuna prima coordinata $x$ esiste un'unica seconda coordinata $x^2$.
-2. Insieme $F = { (x^2, x) \in \mathbb{Q} \times \mathbb{Q} \mid x \in \mathbb{Q} }$:
+2. Insieme $F = \{ (x^2, x) \in \mathbb{Q} \times \mathbb{Q} \mid x \in \mathbb{Q} \}$:
     - **Non è un grafico** (rappresenta una parabola con asse orizzontale) poiché per un valore $x^2 > 0$ la retta verticale interseca l'insieme in due punti distinti ($x$ e $-x$).
 
 ---
@@ -33,12 +33,12 @@ Dato un grafico $G \subseteq X \times Y$:
 
 - **Dominio del grafico** ($\text{Dom}(G)$):
     - Definizione formale: insieme dei punti $x \in X$ per cui esiste almeno un elemento $y \in Y$ tale che la coppia $(x,y) \in G$: $$
-\text{Dom}(G) := { x \in X \mid \exists y \in Y \mid (x,y) \in G }
+\text{Dom}(G) := \{ x \in X \mid \exists y \in Y \mid (x,y) \in G \}
 $$
     - Significato geometrico: corrisponde alla **proiezione** del grafico $G$ sul primo fattore $X$ (asse orizzontale). Per questi punti $x$, la sezione verticale $S_x$ incontra $G$ in esattamente un punto ($\exists! y \in Y$).
 - **Immagine del grafico** ($\text{Im}(G)$):
     - Definizione formale: insieme degli elementi $y \in Y$ per cui esiste un punto $x \in \text{Dom}(G)$ tale che la coppia $(x,y) \in G$: $$
-\text{Im}(G) := { y \in Y \mid \exists x \in \text{Dom}(G) \mid (x,y) \in G }
+\text{Im}(G) := \{ y \in Y \mid \exists x \in \text{Dom}(G) \mid (x,y) \in G \}
 $$
     - Significato geometrico: corrisponde alla **proiezione** del grafico $G$ sul secondo fattore $Y$ (asse verticale). Un punto $y$ appartiene all'immagine se la retta orizzontale alla quota $y$ incontra $G$ in almeno un punto.
 - Nota sul **codominio**: l'insieme $Y$ costituisce il codominio; l'immagine $\text{Im}(G)$ può coincidere con $Y$ oppure esserne un sottoinsieme proprio (se il grafico è limitato verticalmente).
@@ -48,7 +48,7 @@ $$
 - Dato un grafico $G \subseteq X \times Y$, per ogni $x \in \text{Dom}(G)$ esiste un unico $y \in Y$ tale che $(x,y) \in G$.
 - Si dice che $y$ è **funzione** di $x$ (esprime la dipendenza per cui al variare di $x$ nel dominio cambia $y$) e si scrive $y = f_G(x)$ (oppure $f(x)$).
 - Ricostruzione del grafico tramite la funzione: $$
-G = { (x, f_G(x)) \in X \times Y \mid x \in \text{Dom}(G) }
+G = \{ (x, f_G(x)) \in X \times Y \mid x \in \text{Dom}(G) \}
 $$
 - **Dominio e Immagine della funzione**:
     - $\text{Dom}(f_G) := \text{Dom}(G)$
@@ -59,11 +59,11 @@ $$
 
 - Nella pratica si parte da una formula espressa algebricamente (es. $f(x) = x^2$) e si determina:
     1. Il massimo insieme di definizione (**dominio della funzione**).
-    2. Il grafico $G_f = { (x, f(x)) \in \mathbb{Q} \times \mathbb{Q} \mid x \in \mathbb{Q} }$.
+    2. Il grafico $G_f = \{ (x, f(x)) \in \mathbb{Q} \times \mathbb{Q} \mid x \in \mathbb{Q} \}$.
     3. L'**immagine della funzione** ($\text{Im}(f)$).
 - Esempio per $f(x) = x^2$ definiti sui razionali $\mathbb{Q}$:
     - $\text{Dom}(f) = \mathbb{Q}$.
-    - $\text{Im}(f) = { x^2 \mid x \in \mathbb{Q} }$.
+    - $\text{Im}(f) = \{ x^2 \mid x \in \mathbb{Q} \}$.
     - Il numero $2 \notin \text{Im}(f)$ poiché $2$ non è il quadrato di alcun numero razionale.
     - Tutto il semiasse verticale negativo non appartiene all'immagine $\text{Im}(f)$.
 - Importanza applicativa: la determinazione dell'immagine è fondamentale nelle scienze applicate (es. valori assunti dalla temperatura di un sistema fisico sottoposta a vincoli di funzionamento).
@@ -116,7 +116,7 @@ $$
 ### Classe di equivalenza
 
 - Dato un elemento $x \in X$, si definisce **classe di equivalenza** di $x$ (indicata con $[x]_R$ o $[x]_\sim$) l'insieme di tutti gli elementi $y \in X$ in relazione con $x$: $$
-[x]_R := { y \in X \mid x \sim y }
+[x]_R := \{ y \in X \mid x \sim y \}
 $$
 - Ogni classe di equivalenza è un sottoinsieme di $X$ (elemento dell'insieme delle parti $\mathcal{P}(X)$).
 
@@ -134,7 +134,7 @@ $$
 ### Definizione di insieme quoziente
 
 - L'**insieme quoziente** (indicato con $X / R$ oppure $X / \sim$) è definito come l'insieme di tutte le classi di equivalenza: $$
-X / R := { [x]_R \mid x \in X }
+X / R := \{ [x]_R \mid x \in X \}
 $$
 - Costituisce un nuovo insieme i cui elementi sono sottoinsiemi di $X$ (elementi dell'insieme delle parti $\mathcal{P}(X)$).
 
@@ -152,7 +152,7 @@ $$
 ### Esempio 2: Costruzione rigorosa dei numeri razionali $\mathbb{Q}$
 
 - Insieme di partenza $X$: sottoinsieme di $\mathbb{Z} \times \mathbb{Z}$ formato dalle coppie di interi $(m,n)$ con secondo elemento non nullo: $$
-X := { (m,n) \in \mathbb{Z} \times \mathbb{Z} \mid n \neq 0 }
+X := \{ (m,n) \in \mathbb{Z} \times \mathbb{Z} \mid n \neq 0 \}
 $$
 - Definizione della relazione di equivalenza: $$
 (m,n) \sim (m',n') \iff m \cdot n' = m' \cdot n

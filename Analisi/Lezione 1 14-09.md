@@ -110,15 +110,15 @@ $$
 
 - **Prodotto cartesiano** ($A \times B$):
     - Insieme costituito dalle coppie ordinate il cui primo elemento appartiene ad $A$ ed il secondo appartiene a $B$: $$
-A \times B := { (a, b) \mid a \in A \land b \in B }
+A \times B := \{ (a, b) \mid a \in A \land b \in B \}
 $$
 - **Insieme complementare** ($A^c$):
     - Dato un sottoinsieme $A \subseteq B$, il complementare di $A$ in $B$ è definito come: $$
-A^c := { x \in B \mid x \notin A }
+A^c := \{ x \in B \mid x \notin A \}
 $$
 - **Differenza tra insiemi** ($A \setminus B$ oppure $A - B$):
     - Insieme formato dagli elementi di $A$ che non appartengono a $B$: $$
-A \setminus B := { x \in A \mid x \notin B }
+A \setminus B := \{ x \in A \mid x \notin B \}
 $$
     - Esempio: l'insieme dei numeri naturali privo dello zero è indicato con $\mathbb{N}^* = \mathbb{N} \setminus {0}$.
 
@@ -136,7 +136,7 @@ $$
 \mathbb{Z} = {0, \pm 1, \pm 2, \dots}
 $$
 - **Numeri razionali** ($\mathbb{Q}$): $$
-\mathbb{Q} = \left{ \frac{m}{n} ;\middle|; m, n \in \mathbb{Z}, , n \neq 0 \right}
+\mathbb{Q} = \left\{ \frac{m}{n} ;\middle|; m, n \in \mathbb{Z}, , n \neq 0 \right\}
 $$
 - Catena di inclusione tra insiemi numerici: $$
 \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}
