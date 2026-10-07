@@ -2,23 +2,23 @@
 
 ### Limite per $n \to -\infty$
 
-- **Definizione formale**: data una successione ${x_n}$ avente come dominio un insieme di indici interi negativi ($n \le 0$), si dice che $\lim_{n \to -\infty} x_n = L \in \mathbb{Q}$ se: $$
-\forall \varepsilon > 0, , \exists N_\varepsilon \le 0 \quad \text{tale che} \quad \forall n \le N_\varepsilon \implies |x_n - L| < \varepsilon
+- **Definizione formale**: data una successione $\{x_n\}$ avente come dominio un insieme di indici interi negativi ($n \le 0$), si dice che $\lim_{n \to -\infty} x_n = L \in \mathbb{Q}$ se: $$
+\forall \varepsilon > 0,  \exists N_\varepsilon \le 0 \quad \text{tale che} \quad \forall n \le N_\varepsilon \implies |x_n - L| < \varepsilon
 $$
 - **Significato analitico**: la soglia temporale $N_\varepsilon$ e gli indici $n$ assumono valori interi negativi con valore assoluto arbitrariamente grande. I valori della successione si concentrano definitivamente all'interno dell'intervallo $(L-\varepsilon, L+\varepsilon)$.
 
 ### Limiti infiniti per $n \to +\infty$ e $n \to -\infty$
 
 - **Divergenza a $+\infty$ ($\lim_{n \to +\infty} x_n = +\infty$)**: $$
-\forall M \in \mathbb{Q}, , \exists N_M \in \mathbb{N} \quad \text{tale che} \quad \forall n \ge N_M \implies x_n > M
+\forall M \in \mathbb{Q} , \exists N_M \in \mathbb{N} \quad \text{tale che} \quad \forall n \ge N_M \implies x_n > M
 $$
     - **Esempio canonico**: la successione identità $x_n = n$ ammette limite $+\infty$ (con scelta della soglia intera $N_M > M$).
 - **Divergenza a $-\infty$ ($\lim_{n \to +\infty} x_n = -\infty$)**: $$
-\forall M \in \mathbb{Q}, , \exists N_M \in \mathbb{N} \quad \text{tale che} \quad \forall n \ge N_M \implies x_n < M
+\forall M \in \mathbb{Q} , \exists N_M \in \mathbb{N} \quad \text{tale che} \quad \forall n \ge N_M \implies x_n < M
 $$
     - Interpretazione: fissata una qualunque barriera $M$ (positiva o negativa), la successione si colloca definitivamente a sinistra di $M$, ovvero nella semiretta $(-\infty, M)$.
 - **Divergenza a $-\infty$ per $n \to -\infty$ ($\lim_{n \to -\infty} x_n = -\infty$)**: $$
-\forall M \in \mathbb{Q}, , \exists N_M \le 0 \quad \text{tale che} \quad \forall n \le N_M \implies x_n < M
+\forall M \in \mathbb{Q} , \exists N_M \le 0 \quad \text{tale che} \quad \forall n \le N_M \implies x_n < M
 $$
 
 ---
@@ -40,7 +40,7 @@ $$
 
 ### Teorema di Permanenza del Segno
 
-- **Enunciato**: Sia ${x_n}$ una successione numerica a valori non negativi ($x_n \ge 0$ per ogni $n \in \mathbb{N}$, o definitivamente). Se esiste il limite $\lim_{n \to +\infty} x_n = L \in \mathbb{Q}$, allora anche il limite è non negativo: $$
+- **Enunciato**: Sia $\{x_n\}$ una successione numerica a valori non negativi ($x_n \ge 0$ per ogni $n \in \mathbb{N}$, o definitivamente). Se esiste il limite $\lim_{n \to +\infty} x_n = L \in \mathbb{Q}$, allora anche il limite è non negativo: $$
 L \ge 0
 $$
 - **Dimostrazione per assurdo**:
@@ -59,11 +59,11 @@ $$
 
 ### Teorema di Monotonia (Conservazione dell'ordine)
 
-- **Enunciato**: Siano ${x_n}$ e ${y_n}$ due successioni numeriche tali che $x_n \le y_n$ per ogni $n \in \mathbb{N}$ (o definitivamente). Se esistono i limiti $\lim_{n \to +\infty} x_n = L_1 \in \mathbb{Q}$ e $\lim_{n \to +\infty} y_n = L_2 \in \mathbb{Q}$, allora: $$
+- **Enunciato**: Siano $\{x_n\}$ e $\{y_n\}$ due successioni numeriche tali che $x_n \le y_n$ per ogni $n \in \mathbb{N}$ (o definitivamente). Se esistono i limiti $\lim_{n \to +\infty} x_n = L_1 \in \mathbb{Q}$ e $\lim_{n \to +\infty} y_n = L_2 \in \mathbb{Q}$, allora: $$
 L_1 \le L_2
 $$
 - **Dimostrazione**:
-    1. Si definisca la successione differenza $z_n := y_n - x_n$.
+    1. Si definisca la successione differenza $\{z_n\} := \{y_{n}\}- \{x_n\}$.
     2. Dall'ipotesi $x_n \le y_n$, la successione $z_n$ è non negativa ($z_n \ge 0$ per ogni $n$).
     3. Per il teorema sul limite della somma/differenza di successioni convergenti, il limite di $z_n$ esiste e vale: $$
 \lim_{n \to +\infty} z_n = \lim_{n \to +\infty} (y_n - x_n) = L_2 - L_1
@@ -126,8 +126,8 @@ $$
 
 ### Definizione formale di successione di Cauchy
 
-- Una successione numerica ${x_n} \subseteq \mathbb{Q}$ si dice **successione di Cauchy** (oppure soddisfa la **proprietà di Cauchy**) se: $$
-\forall \varepsilon > 0 (\in \mathbb{Q}), , \exists N_\varepsilon \in \mathbb{N} \quad \text{tale che} \quad \forall m, n > N_\varepsilon \implies |x_m - x_n| < \varepsilon
+- Una successione numerica $\{x_n\} \subseteq \mathbb{Q}$ si dice **successione di Cauchy** (oppure soddisfa la **proprietà di Cauchy**) se: $$
+\forall \varepsilon > 0 (\in \mathbb{Q}) , \exists N_\varepsilon \in \mathbb{N} \quad \text{tale che} \quad \forall m, n > N_\varepsilon \implies |x_m - x_n| < \varepsilon
 $$
 - **Significato analitico**: esprime la condizione per cui i termini della successione si accumulano e si concentrano arbitrariamente **su se stessi** per indici sufficientemente grandi, senza fare alcun riferimento esplicito al valore del limite $L$.
 
@@ -165,7 +165,7 @@ $$
 
 Sia $\mathcal{C}$ l'insieme di tutte le successioni di Cauchy in $\mathbb{Q}$:
 
-1. **Lemma 1 (Limitatezza)**: Ogni successione di Cauchy ${x_n} \in \mathcal{C}$ è **limitata**.
+1. **Lemma 1 (Limitatezza)**: Ogni successione di Cauchy $\{x_n\} \in \mathcal{C}$ è **limitata**.
     - _Dimostrazione_: Nella definizione di Cauchy si scelga $\varepsilon = 1$, ottenendo una soglia $N_1 \in \mathbb{N}$ tale che per $m, n \ge N_1 \implies |x_m - x_n| < 1$. Fissando $m = N_1$, si ha $|x_n| \le |x_{N_1}| + 1$ per ogni $n \ge N_1$. L'insieme dei valori dell'intera successione è limitato poiché unione dell'insieme finito ${x_0, \dots, x_{N_1-1}}$ con l'insieme limitato dei termini per $n \ge N_1$.
 2. **Lemma 2 (Chiusura algebrica)**: Se ${x_n}, {y_n} \in \mathcal{C}$, allora la successione somma ${x_n + y_n}$ e la successione prodotto ${x_n \cdot y_n}$ appartengono a $\mathcal{C}$.
 
@@ -186,7 +186,7 @@ $$
 \mathbb{R} := \mathcal{C} / \sim
 $$
 - Un **numero reale** $R \in \mathbb{R}$ è una classe di equivalenza di successioni di Cauchy razionali: $$
-R = [{x_n}] = \left{ {y_n} \in \mathcal{C} ;\middle|; \lim_{n \to +\infty} (x_n - y_n) = 0 \right}
+R = [{x_n}] = \left\{ {y_n} \in \mathcal{C} ;\middle|; \lim_{n \to +\infty} (x_n - y_n) = 0 \right\}
 $$
 
 ### Operazioni algebriche in $\mathbb{R}$ e immersione di $\mathbb{Q}$

@@ -211,4 +211,4 @@ $$
 - **Enunciato**: Se $\lim_{n \to +\infty} x_n = L_1$ e $\lim_{n \to +\infty} y_n = L_2$ con $L_2 \neq 0$, allora la successione quoziente $\frac{x_n}{y_n}$ converge e vale: $$
 \lim_{n \to +\infty} \frac{x_n}{y_n} = \frac{L_1}{L_2} = \frac{\lim_{n \to +\infty} x_n}{\lim_{n \to +\infty} y_n}
 $$
-- Nota: La dimostrazione discende dalla combinazione della proprietà del prodotto con il limite della successione reciproca $\left{\frac{1}{y_n}\right}$.
+- Nota: La dimostrazione discende dalla combinazione della proprietà del prodotto con il limite della successione reciproca $\frac{1}{y_n}$.
