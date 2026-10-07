@@ -139,14 +139,14 @@ $$
 Sia $E \subseteq \mathbb{R}$ un sottoinsieme di numeri reali e sia $\bar{x} \in \mathbb{R}$.
 
 - Il punto $\bar{x}$ si dice **punto isolato** per l'insieme $E$ se esiste un raggio $\varepsilon > 0$ tale che l'intorno simmetrico di $\bar{x}$ privo del punto stesso non interseca l'insieme $E$: $$
-((\bar{x} - \varepsilon, \bar{x} + \varepsilon) \setminus {\bar{x}}) \cap E = \emptyset
+((\bar{x} - \varepsilon, \bar{x} + \varepsilon) \setminus \{\bar{x}\}) \cap E = \emptyset
 $$
 - Interpretazione: attorno al punto $\bar{x}$ è possibile costruire una trappola circolare sufficientemente piccola che non contiene alcun altro elemento di $E$.
 
 ### Definizione di Punto di Accumulazione
 
 - Il punto $\bar{x} \in \mathbb{R}$ si dice **punto di accumulazione** per l'insieme $E$ se **non è isolato** per $E$, ossia se per ogni raggio $\varepsilon > 0$ l'intorno simmetrico centrato in $\bar{x}$ contiene almeno un elemento di $E$ distinto da $\bar{x}$: $$
-\forall \varepsilon > 0 \implies ((\bar{x} - \varepsilon, \bar{x} + \varepsilon) \setminus {\bar{x}}) \cap E \neq \emptyset
+\forall \varepsilon > 0 \implies ((\bar{x} - \varepsilon, \bar{x} + \varepsilon) \setminus \{\bar{x}\}) \cap E \neq \emptyset
 $$
 
 ### Caratterizzazioni equivalenti di punto di accumulazione
@@ -156,7 +156,7 @@ Un punto $\bar{x} \in \mathbb{R}$ è di accumulazione per $E$ se e solo se è so
 1. **Formulazione insiemistica infinita**: per ogni $\varepsilon > 0$, l'intersezione dell'intorno centrato in $\bar{x}$ con l'insieme $E$ contiene un **numero infinito di punti**: $$
 \vert (\bar{x} - \varepsilon, \bar{x} + \varepsilon) \cap E \vert = +\infty
 $$
-2. **Formulazione per successioni (Avvicinamento vincolato non banale)**: esiste una successione ${x_k}_{k \in \mathbb{N}} \subseteq E$ di punti appartenenti ad $E$, **tutti distinti tra loro e tutti distinti da $\bar{x}$** ($x_k \neq \bar{x}$ per ogni $k$), che converge a $\bar{x}$: $$
+2. **Formulazione per successioni (Avvicinamento vincolato non banale)**: esiste una successione $\{x_k\}_{k \in \mathbb{N}} \subseteq E$ di punti appartenenti ad $E$, **tutti distinti tra loro e tutti distinti da $\bar{x}$** ($x_k \neq \bar{x}$ per ogni $k$), che converge a $\bar{x}$: $$
 \lim_{k \to +\infty} x_k = \bar{x}
 $$
 
@@ -167,7 +167,7 @@ $$
 
 ### Esempio: Insieme dei reciproci dei numeri naturali
 
-- Si consideri l'insieme $E = \left{ \frac{1}{n} ;\middle|; n \in \mathbb{N}^* \right} = \left{1, \frac{1}{2}, \frac{1}{3}, \dots \right} \subset \mathbb{R}$.
+- Si consideri l'insieme $E = \left\{ \frac{1}{n} \middle|\hspace{0.2cm} n \in \mathbb{N}^* \right\} = \left\{1, \frac{1}{2}, \frac{1}{3}, \dots \right\} \subset \mathbb{R}$.
 - **Analisi del punto $\bar{x} = 0$**:
     - Per ogni $\varepsilon > 0$, scegliendo un indice $n > \frac{1}{\varepsilon}$, si ha che $\frac{1}{n} \in (0, \varepsilon) \subset (-\varepsilon, \varepsilon)$.
     - Poiché $\lim_{n \to +\infty} \frac{1}{n} = 0$ con $\frac{1}{n} \neq 0$ per ogni $n$, il punto $\bar{x} = 0$ è un **punto di accumulazione** per l'insieme $E$.

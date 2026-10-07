@@ -4,21 +4,21 @@
 
 - Sia $E \subseteq \mathbb{R}$ un sottoinsieme di numeri reali e sia $\bar{x} \in \mathbb{R}$.
 - Il punto $\bar{x}$ si dice **punto di accumulazione** per l'insieme $E$ se per ogni $\varepsilon > 0$, l'intersezione tra l'intorno simmetrico $(\bar{x} - \varepsilon, \bar{x} + \varepsilon)$ e l'insieme $E$, privato al più del punto $\bar{x}$ stesso, contiene un numero infinito di punti: $$
-\vert (\bar{x} - \varepsilon, \bar{x} + \varepsilon) \cap (E \setminus {\bar{x}}) \vert = +\infty
+\vert (\bar{x} - \varepsilon, \bar{x} + \varepsilon) \cap (E \setminus \{\bar{x}\}) \vert = +\infty
 $$
 - **Esclusione dell'avvicinamento banale**: la rimozione di $\bar{x}$ dall'insieme garantisce che l'avvicinamento al punto avvenga mediante elementi di $E$ distinti da $\bar{x}$, evitando il caso banale in cui $\bar{x} \in E$ e si consideri la coincidenza del punto con se stesso.
 - **Caratterizzazione mediante successioni**:
     - Scegliendo $\varepsilon = \frac{1}{n}$ per ogni $n \in \mathbb{N}^*$, esiste un punto $x_n \in E$ con $x_n \neq \bar{x}$ tale che la distanza euclidea soddisfa: $$
 \vert x_n - \bar{x} \vert < \frac{1}{n}
 $$
-    - Un punto $\bar{x} \in \mathbb{R}$ è di accumulazione per $E$ se e solo se esiste una successione ${x_n} \subseteq E \setminus {\bar{x}}$ di punti dell'insieme, tutti distinti da $\bar{x}$, che converge a $\bar{x}$: $$
+    - Un punto $\bar{x} \in \mathbb{R}$ è di accumulazione per $E$ se e solo se esiste una successione $\{x_n\} \subseteq E \setminus \{\bar{x}\}$ di punti dell'insieme, tutti distinti da $\bar{x}$, che converge a $\bar{x}$: $$
 \lim_{n \to +\infty} x_n = \bar{x}
 $$
 
 ### Definizione di Insieme Derivato
 
 - Si definisce **insieme derivato** dell'insieme $E$ (indicato con la notazione $E'$) l'insieme formato da tutti i punti di accumulazione di $E$: $$
-E' := { x \in \mathbb{R} \mid x \text{ è punto di accumulazione per } E }
+E' := \{ x \in \mathbb{R} \mid x \text{ è punto di accumulazione per } E \}
 $$
 
 ### Esempi di calcolo dell'insieme derivato
