@@ -61,7 +61,7 @@ Sia $\{x_n \}_{n \ge n_0} \subseteq \mathbb{Q}$ una successione numerica e sia $
 \forall \varepsilon > 0 , \exists N_\varepsilon \ge n_0 \quad \text{tale che} \quad \forall n > N_\varepsilon \implies L - \varepsilon < x_n < L + \varepsilon
 $$
 2. **Formulazione insiemistica (trappola definitivamente contenitiva)**: $$
-\forall \varepsilon > 0 , \exists N_\varepsilon \ge n_0 \quad \text{tale che} \quad {x_n}_{n > N_\varepsilon} \subseteq (L - \varepsilon, L + \varepsilon)
+\forall \varepsilon > 0 , \exists N_\varepsilon \ge n_0 \quad \text{tale che} \quad \{x_n \}_{n > N_\varepsilon} \subseteq (L - \varepsilon, L + \varepsilon)
 $$
 3. **Formulazione mediante modulo e distanza euclidea**: $$
 \forall \varepsilon > 0,  \exists N_\varepsilon \ge n_0 \quad \text{tale che} \quad \forall n > N_\varepsilon \implies |x_n - L| < \varepsilon
@@ -104,7 +104,7 @@ $$
 ### Formulazione formale di divergenza a $+\infty$
 
 Si dice che una successione numerica ${x_n}$ ha **limite più infinito** (in simboli $\lim_{n \to +\infty} x_n = +\infty$), se: $$
-\forall M \in \mathbb{Q}, , \exists N_M \in \mathbb{N} \quad \text{tale che} \quad \forall n \ge N_M \implies x_n > M
+\forall M \in \mathbb{Q} , \exists N_M \in \mathbb{N} \quad \text{tale che} \quad \forall n \ge N_M \implies x_n > M
 $$
 
 - Formulazione equivalente mediante semiretta: $$
@@ -122,7 +122,7 @@ $$
 - Per ogni $k \in \mathbb{N}$ fissato, vale l'uguaglianza: $$
 \lim_{n \to +\infty} x_n = \lim_{n \to +\infty} x_{n+k}
 $$
-- Giustificazione: le due successioni ${x_n}$ e ${x_{n+k}}$ differiscono soltanto per i primi $k$ termini.
+- Giustificazione: le due successioni $\{x_n \}$ e $\{x_{n+k}\}$ differiscono soltanto per i primi $k$ termini.
 - Poiché il limite valuta esclusivamente il **comportamento asintotico** (ciò che avviene definitivamente all'infinito), alterare o eliminare un numero finito di termini modifica la soglia temporale $N_\varepsilon$ (traslandola di $k$), ma lascia inalterata l'esistenza e il valore del limite.
 
 ---
@@ -133,7 +133,7 @@ Siano ${x_n}$ e ${y_n}$ successioni numeriche in $\mathbb{Q}$.
 
 ### Proprietà 1: Unicità del Limite
 
-- **Enunciato**: Se il limite di una successione ${x_n}$ esiste in $\mathbb{Q}$, esso è **unico**.
+- **Enunciato**: Se il limite di una successione $\{x_n \}$ esiste in $\mathbb{Q}$, esso è **unico**.
 - **Dimostrazione**:
     1. Si supponga per assurdo che la successione ammetta due limiti distinti $L_1, L_2 \in \mathbb{Q}$ con $L_1 \neq L_2$.
     2. Per definizione di limite, per ogni $\varepsilon > 0$ esistono due soglie $N_1(\varepsilon), N_2(\varepsilon) \in \mathbb{N}$ tali che: $$
@@ -154,16 +154,16 @@ $$
 
 ### Proprietà 2: Limitatezza delle Successioni Convergenti
 
-- **Enunciato**: Se una successione ${x_n}$ converge a un limite $L \in \mathbb{Q}$, allora la successione ${x_n}$ è **limitata**.
+- **Enunciato**: Se una successione $\{x_n \}$ converge a un limite $L \in \mathbb{Q}$, allora la successione $\{x_n \}$ è **limitata**.
 - **Dimostrazione**:
     1. Si applichi la definizione di limite fissando la scelta arbitraria $\varepsilon = 1$.
     2. Esiste una soglia $N_1 \in \mathbb{N}$ tale che per tutti gli indici $n \ge N_1$ si ha $x_n \in (L - 1, L + 1)$.
     3. L'insieme di tutti i valori della successione si scompone nell'unione di due sottoinsiemi: $$
-{x_n}_{n \in \mathbb{N}} = {x_0, x_1, \dots, x_{N_1 - 1}} \cup {x_n}_{n \ge N_1}
+\{x_n \}_{n \in \mathbb{N}} = {x_0, x_1, \dots, x_{N_1 - 1}} \cup \{x_n \}_{n \ge N_1}
 $$
     4. Il primo sottoinsieme ${x_0, \dots, x_{N_1 - 1}}$ è **finito** e dunque limitato (racchiuso tra il suo minimo e il suo massimo).
-    5. Il secondo sottoinsieme ${x_n}_{n \ge N_1}$ è contenuto nell'intervallo $(L - 1, L + 1)$ ed è dunque **limitato** per definizione.
-    6. Poiché l'unione di due insiemi limitati è un insieme limitato, la successione ${x_n}$ è limitata.
+    5. Il secondo sottoinsieme $\{x_n \}_{n \ge N_1}$ è contenuto nell'intervallo $(L - 1, L + 1)$ ed è dunque **limitato** per definizione.
+    6. Poiché l'unione di due insiemi limitati è un insieme limitato, la successione $\{x_n \}$ è limitata.
 
 ### Proprietà 3: Limite della Somma
 
@@ -208,7 +208,7 @@ $$
 
 ### Proprietà 5: Limite del Quoziente
 
-- **Enunciato**: Se $\lim_{n \to +\infty} x_n = L_1$ e $\lim_{n \to +\infty} y_n = L_2$ con $L_2 \neq 0$, allora la successione quoziente $\left{\frac{x_n}{y_n}\right}$ converge e vale: $$
+- **Enunciato**: Se $\lim_{n \to +\infty} x_n = L_1$ e $\lim_{n \to +\infty} y_n = L_2$ con $L_2 \neq 0$, allora la successione quoziente $\frac{x_n}{y_n}$ converge e vale: $$
 \lim_{n \to +\infty} \frac{x_n}{y_n} = \frac{L_1}{L_2} = \frac{\lim_{n \to +\infty} x_n}{\lim_{n \to +\infty} y_n}
 $$
 - Nota: La dimostrazione discende dalla combinazione della proprietà del prodotto con il limite della successione reciproca $\left{\frac{1}{y_n}\right}$.
