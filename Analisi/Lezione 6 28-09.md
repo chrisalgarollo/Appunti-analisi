@@ -72,7 +72,7 @@ $$
 
 ### Dimostrazione del Teorema di Densità
 
-1. Sia $R = [{q_n}] \in \mathbb{R}$ la classe di equivalenza della successione di Cauchy razionale ${q_n}$.
+1. Sia $R = [\{q_n\}] \in \mathbb{R}$ la classe di equivalenza della successione di Cauchy razionale ${q_n}$.
 2. Per definizione di successione di Cauchy, fissato un numero razionale $\varepsilon > 0$, esiste una soglia $N_\varepsilon \in \mathbb{N}$ tale che: $$
 \forall m, n \ge N_\varepsilon \implies |q_m - q_n| < \varepsilon
 $$
@@ -90,22 +90,22 @@ $$
 
 ### Definizione di limite per successioni reali
 
-Sia ${X_n}_{n \in \mathbb{N}} \subseteq \mathbb{R}$ una successione di numeri reali e sia $L \in \mathbb{R}$. Si dice che la successione ha **limite** $L$, oppure **converge** ad $L$ (in simboli $\lim_{n \to +\infty} X_n = L$), se: $$
-\forall \varepsilon > 0 (\in \mathbb{Q}), , \exists N_\varepsilon \in \mathbb{N} \quad \text{tale che} \quad \forall n \ge N_\varepsilon \implies |X_n - L| < \varepsilon
+Sia $\{x_n\}_{n \in \mathbb{N}} \subseteq \mathbb{R}$ una successione di numeri reali e sia $L \in \mathbb{R}$. Si dice che la successione ha **limite** $L$, oppure **converge** ad $L$ (in simboli $\lim_{n \to +\infty} X_n = L$), se: $$
+\forall \varepsilon > 0 (\in \mathbb{Q}) , \exists N_\varepsilon \in \mathbb{N} \quad \text{tale che} \quad \forall n \ge N_\varepsilon \implies |x_n - L| < \varepsilon
 $$
 
-- La struttura logica della definizione è identica a quella nei numeri razionali, con la differenza che la distanza $|X_n - L|$ valuta la distanza tra numeri reali.
+- La struttura logica della definizione è identica a quella nei numeri razionali, con la differenza che la distanza $|x_n - L|$ valuta la distanza tra numeri reali.
 
 ### Convergenza delle successioni di Cauchy razionali nei numeri reali
 
-- **Teorema**: Ogni successione di Cauchy di numeri razionali ${q_n} \in \mathcal{C}$ converge, all'interno dell'insieme dei numeri reali $\mathbb{R}$, esattamente al numero reale rappresentato dalla sua classe di equivalenza $L = [{q_n}] \in \mathbb{R}$: $$
-\lim_{n \to +\infty} q_n = L = [{q_n}]
+- **Teorema**: Ogni successione di Cauchy di numeri razionali ${q_n} \in \mathcal{C}$ converge, all'interno dell'insieme dei numeri reali $\mathbb{R}$, esattamente al numero reale rappresentato dalla sua classe di equivalenza $L = [\{q_n\}] \in \mathbb{R}$: $$
+\lim_{n \to +\infty} q_n = L = [\{q_n\}]
 $$
 - **Dimostrazione**:
-    1. Si consideri la successione razionale di Cauchy ${q_n}$ e la sua classe di equivalenza $L = [{q_n}] \in \mathbb{R}$.
+    1. Si consideri la successione razionale di Cauchy $\{q_n\}$ e la sua classe di equivalenza $L = [\{q_n\}] \in \mathbb{R}$.
     2. Fissato un arbitrario $\varepsilon > 0$, esiste una soglia $N_\varepsilon \in \mathbb{N}$ tale che per $m, n \ge N_\varepsilon \implies |q_m - q_n| < \varepsilon$.
-    3. Per un indice $m \ge N_\varepsilon$ fissato, si valuti la distanza tra il numero razionale $q_m$ (inteso come numero reale rappresentato dalla successione costante $q_m$) ed il numero reale $L = [{q_n}]$.
-    4. Tale distanza reale $|q_m - L|$ è la classe della successione ${|q_m - q_n|}_{n \in \mathbb{N}}$.
+    3. Per un indice $m \ge N_\varepsilon$ fissato, si valuti la distanza tra il numero razionale $q_m$ (inteso come numero reale rappresentato dalla successione costante $q_m$) ed il numero reale $L = [\{q_n\}]$.
+    4. Tale distanza reale $|q_m - L|$ è la classe della successione $\{|q_m - q_n|\}_{n \in \mathbb{N}}$.
     5. Poiché per $n \ge N_\varepsilon$ si ha definitivamente $|q_m - q_n| < \varepsilon$, la classe rappresenta un numero reale minore o uguale ad $\varepsilon$: $$
 \forall m \ge N_\varepsilon \implies |q_m - L| \le \varepsilon
 $$
@@ -120,24 +120,24 @@ $$
 
 ### Definizione di successione di Cauchy nei numeri reali
 
-- Una successione di numeri reali ${X_n} \subseteq \mathbb{R}$ si dice **successione di Cauchy** in $\mathbb{R}$ se: $$
-\forall \varepsilon > 0 (\in \mathbb{Q}), , \exists N_\varepsilon \in \mathbb{N} \quad \text{tale che} \quad \forall m, n \ge N_\varepsilon \implies |X_m - X_n| < \varepsilon
-$$ dove $|X_m - X_n|$ rappresenta la distanza euclidea tra i due numeri reali $X_m$ ed $X_n$.
+- Una successione di numeri reali $\{x_n\} \subseteq \mathbb{R}$ si dice **successione di Cauchy** in $\mathbb{R}$ se: $$
+\forall \varepsilon > 0 (\in \mathbb{Q}) , \exists N_\varepsilon \in \mathbb{N} \quad \text{tale che} \quad \forall m, n \ge N_\varepsilon \implies |x_m - x_n| < \varepsilon
+$$ dove $|x_m - x_n|$ rappresenta la distanza euclidea tra i due numeri reali $x_m$ ed $x_n$.
 
 ### Teorema di Completezza di $\mathbb{R}$
 
-- **Enunciato**: Una successione di numeri reali ${X_n} \subseteq \mathbb{R}$ è convergente in $\mathbb{R}$ se e solo se è una **successione di Cauchy**.
+- **Enunciato**: Una successione di numeri reali $\{x_n\} \subseteq \mathbb{R}$ è convergente in $\mathbb{R}$ se e solo se è una **successione di Cauchy**.
 - In $\mathbb{R}$, la proprietà di Cauchy è condizione **necessaria e sufficiente** per la convergenza.
 - Vantaggio analitico: la condizione di Cauchy permette di verificare la convergenza di una successione reale basandosi esclusivamente sulle relazioni tra i suoi termini, senza dover conoscere a priori il valore del limite.
 
 ### Dimostrazione della sufficienza della condizione di Cauchy nei reali
 
-1. Sia ${X_n} \subseteq \mathbb{R}$ una successione di Cauchy di numeri reali.
-2. Per il **Teorema di densità dei razionali**, per ogni termine reale $X_n$ scelga un numero razionale $q_n \in \mathbb{Q}$ distante meno di $\frac{1}{n}$ da $X_n$: $$
-\forall n \ge 1 \implies |X_n - q_n| < \frac{1}{n}
+1. Sia $\{x_n\} \subseteq \mathbb{R}$ una successione di Cauchy di numeri reali.
+2. Per il **Teorema di densità dei razionali**, per ogni termine reale $x_n$ scelga un numero razionale $q_n \in \mathbb{Q}$ distante meno di $\frac{1}{n}$ da $x_n$: $$
+\forall n \ge 1 \implies |x_n - q_n| < \frac{1}{n}
 $$
 3. Si dimostra che la successione di numeri razionali ${q_n}$ così costruita è una **successione di Cauchy** in $\mathbb{Q}$. Presi due indici $m, n \ge N_\varepsilon$ ed applicando la disuguaglianza triangolare: $$
-|q_m - q_n| = |(q_m - X_m) + (X_m - X_n) + (X_n - q_n)| \le |q_m - X_m| + |X_m - X_n| + |X_n - q_n|
+|q_m - q_n| = |(q_m - x_m) + (x_m - x_n) + (x_n - q_n)| \le |q_m - x_m| + |x_m - x_n| + |x_n - q_n|
 $$
 $$
 |q_m - q_n| < \frac{1}{m} + |X_m - X_n| + \frac{1}{n}
