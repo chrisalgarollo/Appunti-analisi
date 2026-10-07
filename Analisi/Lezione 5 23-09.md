@@ -167,12 +167,12 @@ Sia $\mathcal{C}$ l'insieme di tutte le successioni di Cauchy in $\mathbb{Q}$:
 
 1. **Lemma 1 (Limitatezza)**: Ogni successione di Cauchy $\{x_n\} \in \mathcal{C}$ è **limitata**.
     - _Dimostrazione_: Nella definizione di Cauchy si scelga $\varepsilon = 1$, ottenendo una soglia $N_1 \in \mathbb{N}$ tale che per $m, n \ge N_1 \implies |x_m - x_n| < 1$. Fissando $m = N_1$, si ha $|x_n| \le |x_{N_1}| + 1$ per ogni $n \ge N_1$. L'insieme dei valori dell'intera successione è limitato poiché unione dell'insieme finito ${x_0, \dots, x_{N_1-1}}$ con l'insieme limitato dei termini per $n \ge N_1$.
-2. **Lemma 2 (Chiusura algebrica)**: Se ${x_n}, {y_n} \in \mathcal{C}$, allora la successione somma ${x_n + y_n}$ e la successione prodotto ${x_n \cdot y_n}$ appartengono a $\mathcal{C}$.
+2. **Lemma 2 (Chiusura algebrica)**: Se $\{x_n\}, \{y_n\} \in \mathcal{C}$, allora la successione somma ${\{x_n\} + \{y_n\}}$ e la successione prodotto ${\{x_n\} \cdot \{y_n\}}$ appartengono a $\mathcal{C}$.
 
 ### Relazione di Equivalenza su $\mathcal{C}$
 
 - Sull'insieme $\mathcal{C}$ delle successioni di Cauchy si definisce la relazione $\sim$: $$
-{x_n} \sim {y_n} \iff \lim_{n \to +\infty} (x_n - y_n) = 0
+\{x_n\} \sim \{y_n\} \iff \lim_{n \to +\infty} (x_n - y_n) = 0
 $$
 - **Verifica delle proprietà di equivalenza**:
     1. _Riflessività_: ${x_n} \sim {x_n}$ poiché $\lim (x_n - x_n) = \lim 0 = 0$.
@@ -182,11 +182,12 @@ $$
 
 ### Definizione di $\mathbb{R}$ come Insieme Quoziente
 
+- L'inse$\mathcal{C}$
 - L'insieme dei **numeri reali** ($\mathbb{R}$) è definito formalmente come l'**insieme quoziente** di $\mathcal{C}$ rispetto alla relazione di equivalenza $\sim$: $$
 \mathbb{R} := \mathcal{C} / \sim
 $$
 - Un **numero reale** $R \in \mathbb{R}$ è una classe di equivalenza di successioni di Cauchy razionali: $$
-R = [{x_n}] = \left\{ {y_n} \in \mathcal{C} ;\middle|; \lim_{n \to +\infty} (x_n - y_n) = 0 \right\}
+R = [{x_n}]_\sim = \left\{ {y_n} \in \mathcal{C} ;\middle|; \lim_{n \to +\infty} (x_n - y_n) = 0 \right\}
 $$
 
 ### Operazioni algebriche in $\mathbb{R}$ e immersione di $\mathbb{Q}$
