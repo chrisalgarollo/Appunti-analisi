@@ -118,21 +118,21 @@ A = \{ z \in \mathbb{C} \mid \text{Re}(z) = x_0 \} \quad (x_0 \in \mathbb{R} \te
 $$
     - Rappresenta l'insieme dei punti con longitudine fissata a $x_0$. Per $x_0 = 0$ coincide con l'asse immaginario.
 2. **Retta orizzontale**: $$
-B = { z \in \mathbb{C} \mid \text{Im}(z) = y_0 } \quad (y_0 \in \mathbb{R} \text{ fissato})
+B = \{ z \in \mathbb{C} \mid \text{Im}(z) = y_0 \} \quad (y_0 \in \mathbb{R} \text{ fissato})
 $$
     - Rappresenta l'insieme dei punti con latitudine/quota fissata a $y_0$.
 3. **Bisettrice del I e III quadrante**: $$
-C = { z \in \mathbb{C} \mid \text{Re}(z) = \text{Im}(z) }
+C = \{ z \in \mathbb{C} \mid \text{Re}(z) = \text{Im}(z) \}
 $$
 4. **Disco chiuso di centro $z_0$ e raggio $R$**: $$
-D = { z \in \mathbb{C} \mid |z - z_0| \le R } \quad (z_0 \in \mathbb{C}, , R > 0 \text{ fissati})
+D = \{ z \in \mathbb{C} \mid |z - z_0| \le R \} \quad (z_0 \in \mathbb{C} , R > 0 \text{ fissati})
 $$
     - Esprime la condizione per cui la distanza euclidea tra $z$ e $z_0$ non supera $R$.
 5. **Circonferenza di centro $z_0$ e raggio $R$**: $$
-{ z \in \mathbb{C} \mid |z - z_0| = R }
+\{ z \in \mathbb{C} \mid |z - z_0| = R \}
 $$
 6. **Asse di un segmento (Retta dei punti equidistanti)**: $$
-F = { z \in \mathbb{C} \mid |z - z_1| = |z - z_2| } \quad (z_1, z_2 \in \mathbb{C} \text{ fissati e distinti})
+F = \{ z \in \mathbb{C} \mid |z - z_1| = |z - z_2| \} \quad (z_1, z_2 \in \mathbb{C} \text{ fissati e distinti})
 $$
     - Rappresenta l'insieme dei punti $z$ la cui distanza da $z_1$ è uguale alla distanza da $z_2$.
     - Geometria del luogo: coincide con la **retta perpendicolare** al segmento congiungente $z_1$ e $z_2$, passante per il loro punto medio $z_M = \frac{z_1 + z_2}{2}$.
@@ -183,11 +183,11 @@ $$
 ### Definizione formale di limite finito
 
 Si dice che la funzione $f(x)$ ha **limite finito** $L \in \mathbb{R}$ per $x$ che tende a $x_0$ (in simboli $\lim_{x \to x_0} f(x) = L$), se: $$
-\forall \varepsilon > 0, , \exists \delta > 0 \quad \text{tale che} \quad \forall x \in D, , 0 < |x - x_0| < \delta \implies |f(x) - L| < \varepsilon
+\forall \varepsilon > 0 , \exists \delta > 0 \quad \text{tale che} \quad \forall x \in D , 0 < |x - x_0| < \delta \implies |f(x) - L| < \varepsilon
 $$
 
 - Formulazione insiemistica equivalente: $$
-f((x_0 - \delta, x_0 + \delta) \setminus {x_0} \cap D) \subseteq (L - \varepsilon, L + \varepsilon)
+f((x_0 - \delta, x_0 + \delta) \setminus \{x_0\} \cap D) \subseteq (L - \varepsilon, L + \varepsilon)
 $$
 - Significato analitico: fissato arbitrariamente un intervallo trappola $(L - \varepsilon, L + \varepsilon)$ centrato in $L$ sull'asse verticale, è possibile individuare un raggio $\delta > 0$ sull'asse orizzontale tale che l'immagine di tutti i punti di $D$ distanti da $x_0$ meno di $\delta$ (eccettuato al più $x_0$) ricada all'interno della trappola.
 
@@ -207,25 +207,25 @@ $$ allora la funzione $f$ si dice **continua nel punto $x_0$**.
 ### Asintoto verticale a $+\infty$ e $-\infty$
 
 1. **Divergenza a $+\infty$ ($\lim_{x \to x_0} f(x) = +\infty$)**: $$
-\forall M \in \mathbb{R}, , \exists \delta > 0 \quad \text{tale che} \quad \forall x \in D, , 0 < |x - x_0| < \delta \implies f(x) > M
+\forall M \in \mathbb{R} , \exists \delta > 0 \quad \text{tale che} \quad \forall x \in D , 0 < |x - x_0| < \delta \implies f(x) > M
 $$
     - Significato geometrico: per qualunque quota $M$ fissata (anche enormemente grande), in un opportuno intorno di $x_0$ il grafico della funzione si colloca al di sopra di $M$, schiacciandosi attorno alla semiretta verticale uscente da $x_0$ verso $+\infty$ (**asintoto verticale positivo**).
 2. **Divergenza a $-\infty$ ($\lim_{x \to x_0} f(x) = -\infty$)**: $$
-\forall M \in \mathbb{R}, , \exists \delta > 0 \quad \text{tale che} \quad \forall x \in D, , 0 < |x - x_0| < \delta \implies f(x) < M
+\forall M \in \mathbb{R} , \exists \delta > 0 \quad \text{tale che} \quad \forall x \in D , 0 < |x - x_0| < \delta \implies f(x) < M
 $$
     - Significato geometrico: il grafico della funzione si schiaccia verso il basso lungo la semiretta verticale diretta a $-\infty$ (**asintoto verticale negativo**).
 
 ### Asintoto orizzontale a $+\infty$
 
 - Sia il dominio $D$ illimitato superiormente. Si dice che la funzione ammette **asintoto orizzontale** a $+\infty$ con limite $L \in \mathbb{R}$ (in simboli $\lim_{x \to +\infty} f(x) = L$), se: $$
-\forall \varepsilon > 0, , \exists N \in \mathbb{R} \quad \text{tale che} \quad \forall x \in D, , x > N \implies |f(x) - L| < \varepsilon
+\forall \varepsilon > 0 , \exists N \in \mathbb{R} \quad \text{tale che} \quad \forall x \in D , x > N \implies |f(x) - L| < \varepsilon
 $$
 - Significato geometrico: fissata una striscia orizzontale arbitrariamente sottile $(L - \varepsilon, L + \varepsilon)$ attorno alla quota $L$, superata la soglia orizzontale $N$, l'intero grafico della funzione per $x > N$ rimane racchiuso all'interno della semistriscia orizzontale.
 
 ### Divergenza a $+\infty$ per $x \to +\infty$
 
 - Si dice che $\lim_{x \to +\infty} f(x) = +\infty$ se: $$
-\forall M \in \mathbb{R}, , \exists N \in \mathbb{R} \quad \text{tale che} \quad \forall x \in D, , x > N \implies f(x) > M
+\forall M \in \mathbb{R} , \exists N \in \mathbb{R} \quad \text{tale che} \quad \forall x \in D , x > N \implies f(x) > M
 $$
 - Significato geometrico: superata la soglia $N$, il grafico della funzione è interamente contenuto nel quadrante $(N, +\infty) \times (M, +\infty)$.
 
