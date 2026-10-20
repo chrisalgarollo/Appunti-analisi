@@ -2,7 +2,7 @@
 
 ### Algebra dei limiti per funzioni
 
-Se esiste il limite di una funzione per x che tende a x0, esso è unico. Se esiste limite di una funz per 
+Se esiste il limite di una funzione per x che tende a x0, esso è unico. Se esiste limite di una funzione con un x che tende a x0 allora f è localmente limitata in x0. 
 Siano $f, g: D \to \mathbb{R}$ due funzioni definite su un dominio $D \subseteq \mathbb{R}$ e sia $x_0 \in \mathbb{R}$ un **punto di accumulazione** per $D$. Se esistono i limiti finiti: $$
 \lim_{x \to x_0} f(x) = L_1 \in \mathbb{R}, \quad \lim_{x \to x_0} g(x) = L_2 \in \mathbb{R}
 $$ valgono le seguenti proprietà:
@@ -89,10 +89,10 @@ $$
 ### Dimostrazione del Teorema
 
 1. Fissato un generico $\varepsilon > 0$, dall'ipotesi di limite per la funzione esterna $g$ in $y_0$, esiste un raggio $\delta > 0$ tale che: $$
-\forall y \in D_g, , 0 < |y - y_0| < \delta \implies |g(y) - z_0| < \varepsilon
+\forall y \in D_g , 0 < |y - y_0| < \delta \implies |g(y) - z_0| < \varepsilon
 $$
 2. Ponendo la tolleranza $\varepsilon' := \delta$ nell'ipotesi di limite per la funzione interna $f$ in $x_0$, esiste un raggio $\delta' > 0$ tale che: $$
-\forall x \in D_f, , 0 < |x - x_0| < \delta' \implies |f(x) - y_0| < \varepsilon' = \delta
+\forall x \in D_f , 0 < |x - x_0| < \delta' \implies |f(x) - y_0| < \varepsilon' = \delta
 $$
 3. Concatenando le due implicazioni ponendo $y = f(x)$, per ogni $x \in D_f$ distante da $x_0$ meno di $\delta'$ si ottiene: $$
 |g(f(x)) - z_0| < \varepsilon
