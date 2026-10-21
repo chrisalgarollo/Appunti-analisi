@@ -94,13 +94,34 @@ $$
 2. Ponendo la tolleranza $\varepsilon' := \delta$ nell'ipotesi di limite per la funzione interna $f$ in $x_0$, esiste un raggio $\delta' > 0$ tale che: $$
 \forall x \in D_f , 0 < |x - x_0| < \delta' \implies |f(x) - y_0| < \varepsilon' = \delta
 $$
-3. Concatenando le due implicazioni ponendo $y = f(x)$, per ogni $x \in D_f$ distante da $x_0$ meno di $\delta'$ si ottiene: $$
-|g(f(x)) - z_0| < \varepsilon
-$$ dimostrando che $\lim_{x \to x_0} g(f(x)) = z_0$.
+3. $\forall x \in D_f , 0 < \vert{}x - x_0\vert{} < \delta' \implies \vert{}f(x) - y_0\vert{} < \varepsilon' = \delta$
+    
+4. Concatenando le due implicazioni ponendo $y = f(x)$, per ogni $x \in D_f$ distante da $x_0$ meno di $\delta'$ si ottiene:
+    
+5. $\vert{}g(f(x)) - z_0\vert{} < \varepsilon$
+    
+6. dimostrando che $\lim_{x \to x_0} g(f(x)) = z_0$.
+    
 
-- **Corollario sulla continuità della funzione composta**: Se $f$ è continua nel punto $x_0$ (con $f(x_0) = y_0$) e $g$ è continua nel punto $y_0$, allora la funzione composta $g \circ f$ è **continua nel punto $x_0$**: $$
-\lim_{x \to x_0} g(f(x)) = g(f(x_0))
-$$
+###### **Corollario sulla continuità della funzione composta**: 
+- Se $f$ è continua nel punto $x_0$ (con $f(x_0) = y_0$) e $g$ è continua nel punto $y_0$, allora la funzione composta $g \circ f$ è continua nel punto $x_0$:
+    
+- $\lim_{x \to x_0} g(f(x)) = g(f(x_0))$
+    
+
+###### **Continuità delle Funzioni Elementari e Trigonometriche**
+
+> 0. Continuità di funzioni costanti Sia $f(x)=c$ per ogni $x \in \mathbb{R}$ (con $c \in \mathbb{R}$ fissato). Per ogni $\varepsilon > 0$ si ha $\vert{}f(x) - f(x_0)\vert{} = \vert{}c - c\vert{} = 0 < \varepsilon$ per ogni $x \in \mathbb{R}$. Quindi $\lim_{x \to x_0} c = c$ e $f \in C(\mathbb{R})$.
+> 
+> 1. Continuità della funzione identità Sia $f_1(x) = x$ per ogni $x \in \mathbb{R}$ e sia $x_0 \in \mathbb{R}$. Si ha $\vert{}f_1(x) - f_1(x_0)\vert{} = \vert{}x - x_0\vert{}$. Scegliendo $\delta(\varepsilon) = \varepsilon$ verifichiamo la definizione di limite. Quindi $f_1 \in C(\mathbb{R})$.
+> 
+> 2. Continuità di potenze Sia $f_2(x) = x^2$. Poiché $f_2(x) = x \cdot x = f_1(x) \cdot f_1(x)$, per le proprietà delle funzioni continue viste sopra, $f_2$ è continua come prodotto di funzioni continue, da cui $f_2 \in C(\mathbb{R})$. In generale, per $k \in \mathbb{N}$, supponendo che $f_k(x) = x^k \in C(\mathbb{R})$, si ha $f_{k+1}(x) = x^{k+1} = x^k \cdot x = f_k(x) \cdot f_1(x)$. Poiché $f_k, f_1 \in C(\mathbb{R})$, per il teorema di induzione e le proprietà delle funzioni continue si ricava $f_{k+1} \in C(\mathbb{R})$.
+> 
+> 3. Continuità di polinomi Un polinomio $P: \mathbb{R} \to \mathbb{R}$ espresso come $P(x) = \sum_{k=0}^n c_k x^k$ (con $c_k \in \mathbb{R}$) può essere scritto come $P = \sum_{k=0}^n c_k \cdot f_k$. Per le proprietà delle funzioni continue (somma e prodotto), si ha $P \in C(\mathbb{R})$.
+> 
+> 4. Continuità di funzioni razionali Una funzione razionale $R(x) = \frac{P(x)}{Q(x)}$ definita su $D(R) = \{x \in \mathbb{R} \mid Q(x) \neq 0\}$ risulta continua sul suo dominio ($R \in C(D(R))$) come quoziente di funzioni continue $P$ e $Q$. Ad esempio, $R(x) = \frac{1}{x}$ è continua in $D(R) = (-\infty, 0) \cup (0, +\infty) = \mathbb{R} \setminus \{0\}$. La funzione $R(x) = \frac{x^2-1}{x^2+1}$ ha dominio $\mathbb{R}$ ed è perciò continua in $\mathbb{R}$ ($R \in C(\mathbb{R})$).
+> 
+> 5. Teorema sulla continuità della funzione inversa Sia $f: D \to \mathbb{R}$ una funzione continua su $D$ e invertibile, tale cioè da possedere un'inversa $f^{-1}: \text{Im}(f) \to \mathbb{R}$ per cui $f(f^{-1}(y)) = y$ per ogni $y \in \text{Im}(f)$ e $f^{-1}(f(x)) = x$ per ogni $x \in D$. Allora la funzione inversa risulta continua sul suo dominio: $f^{-1} \in C(\text{Im}(f))$.
 
 ---
 
