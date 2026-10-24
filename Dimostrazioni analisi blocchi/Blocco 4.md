@@ -53,7 +53,7 @@ _Calcolare $(1+i)^{8}$ esprimendo prima $1+i$ in forma trigonometrica ed applica
 ---
 
 ### **Teorema 2 (Principale): Teorema di De Moivre per le Radici $n$-esime di un Numero Complesso**
-
+Blocco 4
 #### **Enunciato Formale**
 
 - **Ipotesi ($H$)**: Dato un numero complesso non nullo $w \in \mathbb{C} \setminus {0}$ espresso in forma trigonometrica $w = \rho (\cos \theta + i \sin \theta)$, con modulo $\rho = |w| > 0$ ed argomento $\theta = \text{arg}(w) \in \mathbb{R}$, e dato un numero intero $n \ge 1$.
